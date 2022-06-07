@@ -1,0 +1,79 @@
+.mainProduct {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+
+.product {
+    padding: 6px 12px;
+    margin: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: .1s ease-in-out;
+}
+.product:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product h5 {
+    margin-top: 15px;
+    padding: 0 1px;
+    height: 27px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    padding: 0 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 200px;
+    max-height: 200px;
+    /* border: 2px solid #000; */
+}
+
+.buttonCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonCenter button {
+    background-color: rgb(94, 4, 212);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttonCenter button:hover {
+    background-color: rgba(176, 14, 252, 0.993);
+}
+
+.priceSection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.loading {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+
+
+@media (max-width:600px) {
+    .mainProduct {
+        grid-template-columns: auto;
+
+    }
+}

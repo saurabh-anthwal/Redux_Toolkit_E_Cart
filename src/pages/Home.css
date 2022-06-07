@@ -1,0 +1,8 @@
+.mainHome {
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.home {}

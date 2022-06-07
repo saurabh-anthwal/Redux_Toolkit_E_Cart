@@ -1,0 +1,140 @@
+.mainCart {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartProduct {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 4px 10px;
+    margin: 10px 2px;
+    outline: 1px solid rgb(238, 232, 232);
+    border-radius: 4px;
+}
+
+.left {
+    width: 100px;
+}
+
+.left img {
+    max-height: 60px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.btn {
+    text-align: center;
+}
+
+
+.btn span {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.right span {
+    text-align: center;
+    padding: 2px 10px;
+    color: rgb(161, 113, 113);
+}
+
+.right span button {
+    padding: 3px 5px;
+    outline: 1px solid wheat;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(133, 7, 252);
+    color: white;
+    border-radius: 5px;
+}
+
+.cartProduct * {
+    margin: 0;
+}
+
+.cartProduct h4 {
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+    margin: 2px 0;
+}
+
+.description {
+    max-width: 700px;
+    color: rgb(54, 54, 54);
+    font-size: 15px;
+    padding: 5px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.mainAside {
+    width: 30%;
+    margin: 10px 0 0 10px;
+    border: 1px solid rgb(228, 223, 223);
+    padding: 10px;
+}
+
+.asideDetail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalAmout {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dotted rgb(206, 202, 202);
+    padding-top: 12px;
+}
+
+.placeOrder button {
+    width: 100%;
+
+    color: white;
+    background-color: rgb(233, 70, 70);
+    font-size: large;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.noItem {
+    background-image: url("https://www.denmakers.in/img/no-product-found.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.noItem h4 {
+    color: rgb(90, 86, 86);
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.noItem p {
+    font-size: x-large;
+    margin-left: 2px;
+    color: rgb(165, 70, 70);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (max-width:600px) {
+    .mainCart {
+        flex-direction: column;
+    }
+
+    .mainAside {
+        width: 90%;
+        max-width: 90%;
+        margin: 0 auto;
+        border: 0;
+    }
+}
